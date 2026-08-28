@@ -5,59 +5,88 @@ Synthesized from three roadmap.sh guides:
 [System Design](https://roadmap.sh/system-design) ·
 [Software Architect](https://roadmap.sh/software-architect)
 
-Structured as sequential modules, one topic at a time. Each topic lists its key
-subtopics and 1–3 homework projects meant to be assigned after that topic is taught.
-Projects generally build in difficulty within a topic (project 1 = apply the concept
-directly, later projects = combine it with prior modules).
+This repository is focused on teaching Software Design and Architecture. The topics have time assigned, but should take significantly more time to learn the topics.
 
 ---
 
+![Bob and AI Teaching the Backbone Curriculum](./images/cs-software-design-and-architecture-002.png)
+
 ## The Backbone Curriculum
 
-The 33 topics below are the index for the whole curriculum — the order they're meant
-to be taught in, with a genuinely free companion resource next to each where one
-exists. Every link was checked to confirm it's actually live, actually free (no
-paywall or signup wall), and actually on-topic — not guessed. Several topics share a
-resource where one source legitimately covers more than one subject (the
-[system-design-primer](https://github.com/donnemartin/system-design-primer) repo for
-most of Parts 4–6, the Azure Architecture Center's pattern catalog for most of Part 7)
-rather than forcing a distinct citation onto every row.
+The 33 topics below are the index for the whole curriculum — the order they're meant to be taught in, with a genuinely free companion resource next to each where one exists. Every link was checked to confirm it's actually live, actually free (no paywall or signup wall), and actually on-topic — not guessed. Several topics share a resource where one source legitimately covers more than one subject (the [system-design-primer](https://github.com/donnemartin/system-design-primer) repo for most of Parts 4–6, the Azure Architecture Center's pattern catalog for most of Part 7) rather than forcing a distinct citation onto every row.
+
+### Part 1 — Foundations of Code Quality
 
 | # | Topic | Free companion / source |
 |---|---|---|
-| 1 | [Clean Code Principles](#1-clean-code-principles) | MIT [6.005 Software Construction](https://ocw.mit.edu/courses/6-005-software-construction-spring-2016/) · [blog.cleancoder.com](https://blog.cleancoder.com/) |
-| 2 | [Structured Programming](#2-structured-programming) | Harvard [CS50x](https://cs50.harvard.edu/x/) |
-| 3 | [Functional Programming](#3-functional-programming) | MIT, [Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/9780262510875/structure-and-interpretation-of-computer-programs/) (SICP, full free text) |
-| 4 | [Object-Oriented Programming](#4-object-oriented-programming) | MIT [6.005 Software Construction](https://ocw.mit.edu/courses/6-005-software-construction-spring-2016/) · Martin Fowler, [Anemic Domain Model](https://martinfowler.com/bliki/AnemicDomainModel.html) |
-| 5 | [Programming Paradigms](#5-programming-paradigms) | Stanford [CS107: Programming Paradigms](https://see.stanford.edu/Course/CS107) (Stanford Engineering Everywhere) |
-| 6 | [Core Design Principles](#6-core-design-principles) | [DeviQ — Principles](https://deviq.com/principles/) |
-| 7 | [SOLID Principles](#7-solid-principles) | [DeviQ — SOLID](https://deviq.com/principles/solid) · freeCodeCamp, [SOLID Principles Explained](https://www.freecodecamp.org/news/solid-principles-explained-in-plain-english/) |
-| 8 | [DRY & YAGNI](#8-dry--yagni) | [DeviQ — DRY](https://deviq.com/principles/dont-repeat-yourself) / [YAGNI](https://deviq.com/principles/yagni/) · Martin Fowler, [Yagni](https://martinfowler.com/bliki/Yagni.html) |
-| 9 | [Design Patterns (GoF & PoSA)](#9-design-patterns-gof--posa) | [refactoring.guru — Design Patterns Catalog](https://refactoring.guru/design-patterns/catalog) · Vanderbilt, [POSA2 companion materials](https://www.dre.vanderbilt.edu/~schmidt/POSA/POSA2/) |
-| 10 | [Architectural Principles](#10-architectural-principles) | Robert C. Martin, [The Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) |
-| 11 | [Architectural Styles](#11-architectural-styles) | *[Software Engineering: A Modern Approach](https://softengbook.org/chapter7), Ch. 7 — free open textbook (page blocks automated fetches; spot-check before relying on it)* |
-| 12 | [Architectural Patterns](#12-architectural-patterns) | *[Software Engineering: A Modern Approach](https://softengbook.org/chapter7), Ch. 7 · Eric Evans, [DDD Reference](https://www.domainlanguage.com/ddd/reference/) — covers MVC, Microservices, Layered, and DDD; doesn't name-check Microkernel/Blackboard/SOA/CQRS directly* |
-| 13 | [Enterprise Application Patterns](#13-enterprise-application-patterns) | Martin Fowler, [P of EAA Catalog](https://martinfowler.com/eaaCatalog/) |
-| 14 | [Core System Design Concepts](#14-core-system-design-concepts) | [system-design-primer](https://github.com/donnemartin/system-design-primer) |
-| 15 | [Consistency & Availability Patterns](#15-consistency--availability-patterns) | [system-design-primer](https://github.com/donnemartin/system-design-primer) |
-| 16 | [DNS, CDNs & Load Balancers](#16-dns-cdns--load-balancers) | [system-design-primer](https://github.com/donnemartin/system-design-primer) |
-| 17 | [Scaling Applications](#17-scaling-applications) | [system-design-primer](https://github.com/donnemartin/system-design-primer) |
-| 18 | [Databases at Scale](#18-databases-at-scale) | [system-design-primer](https://github.com/donnemartin/system-design-primer) |
-| 19 | [NoSQL Database Types](#19-nosql-database-types) | [system-design-primer](https://github.com/donnemartin/system-design-primer) |
-| 20 | [Caching Strategies](#20-caching-strategies) | [system-design-primer](https://github.com/donnemartin/system-design-primer) |
-| 21 | [Asynchronism](#21-asynchronism) | [system-design-primer](https://github.com/donnemartin/system-design-primer) |
-| 22 | [Communication Protocols](#22-communication-protocols) | [system-design-primer](https://github.com/donnemartin/system-design-primer) |
-| 23 | [Performance Antipatterns](#23-performance-antipatterns) | Azure Architecture Center, [Antipatterns](https://learn.microsoft.com/en-us/azure/architecture/antipatterns/) |
-| 24 | [Monitoring & Observability](#24-monitoring--observability) | Google, [SRE Book — Monitoring Distributed Systems](https://sre.google/sre-book/monitoring-distributed-systems/) |
-| 25 | [Cloud Messaging Patterns](#25-cloud-messaging-patterns) | [Azure Architecture Center — Design Patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/) |
-| 26 | [Cloud Data Management Patterns](#26-cloud-data-management-patterns) | [Azure Architecture Center — Design Patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/) |
-| 27 | [Reliability & Resiliency Patterns](#27-reliability--resiliency-patterns) | Azure Architecture Center, [Reliability design patterns](https://learn.microsoft.com/en-us/azure/well-architected/reliability/design-patterns) |
-| 28 | [Cloud Security Patterns](#28-cloud-security-patterns) | Azure Architecture Center, [Security design patterns](https://learn.microsoft.com/en-us/azure/well-architected/security/design-patterns) |
-| 29 | [Understanding Software Architecture](#29-understanding-software-architecture) | MIT [ESD.34 System Architecture](https://ocw.mit.edu/courses/esd-34-system-architecture-january-iap-2007/) |
-| 30 | [Architect Responsibilities & Soft Skills](#30-architect-responsibilities--soft-skills) | MIT [21W.780 Communicating in Technical Organizations](https://ocw.mit.edu/courses/21w-780-communicating-in-technical-organizations-fall-2001/) |
-| 31 | [Architecture Frameworks & Methodologies](#31-architecture-frameworks--methodologies) | [Scrum Guide](https://scrumguides.org/) · OMG, [UML 2.5.1 Specification](https://www.omg.org/spec/UML/2.5.1/PDF) |
-| 32 | [Security for Architects](#32-security-for-architects) | [OWASP Top 10](https://owasp.org/www-project-top-ten/) |
-| 33 | [Operations & DevOps Knowledge](#33-operations--devops-knowledge) | freeCodeCamp, [DevOps articles & tutorials](https://www.freecodecamp.org/news/tag/devops/) |
+| 1 | [Clean Code Principles](part-1-1--clean-code-principles/README.md) | MIT [6.005 Software Construction](https://ocw.mit.edu/courses/6-005-software-construction-spring-2016/) · [blog.cleancoder.com](https://blog.cleancoder.com/) |
+| 2 | [Structured Programming](part-1-2--structured-programming/README.md) | Harvard [CS50x](https://cs50.harvard.edu/x/) |
+| 3 | [Functional Programming](part-1-3--functional-programming/README.md) | MIT, [Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/9780262510875/structure-and-interpretation-of-computer-programs/) (SICP, full free text) |
+| 4 | [Object-Oriented Programming](part-1-4--object-oriented-programming/README.md) | MIT [6.005 Software Construction](https://ocw.mit.edu/courses/6-005-software-construction-spring-2016/) · Martin Fowler, [Anemic Domain Model](https://martinfowler.com/bliki/AnemicDomainModel.html) |
+| 5 | [Programming Paradigms](part-1-5--programming-paradigms/README.md) | Stanford [CS107: Programming Paradigms](https://see.stanford.edu/Course/CS107) (Stanford Engineering Everywhere) |
+
+### Part 2 — Design Principles & Patterns
+
+| # | Topic | Free companion / source |
+|---|---|---|
+| 6 | [Core Design Principles](part-2-6--core-design-principles/README.md) | [DeviQ — Principles](https://deviq.com/principles/) |
+| 7 | [SOLID Principles](part-2-7--solid-principles/README.md) | [DeviQ — SOLID](https://deviq.com/principles/solid) · freeCodeCamp, [SOLID Principles Explained](https://www.freecodecamp.org/news/solid-principles-explained-in-plain-english/) |
+| 8 | [DRY & YAGNI](part-2-8--dry-yagni/README.md) | [DeviQ — DRY](https://deviq.com/principles/dont-repeat-yourself) / [YAGNI](https://deviq.com/principles/yagni/) · Martin Fowler, [Yagni](https://martinfowler.com/bliki/Yagni.html) |
+| 9 | [Design Patterns (GoF & PoSA)](part-2-9--design-patterns-gof-posa/README.md) | [refactoring.guru — Design Patterns Catalog](https://refactoring.guru/design-patterns/catalog) · Vanderbilt, [POSA2 companion materials](https://www.dre.vanderbilt.edu/~schmidt/POSA/POSA2/) |
+
+### Part 3 — Architectural Foundations
+
+| # | Topic | Free companion / source |
+|---|---|---|
+| 10 | [Architectural Principles](part-3-10--architectural-principles/README.md) | Robert C. Martin, [The Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) |
+| 11 | [Architectural Styles](part-3-11--architectural-styles/README.md) | *[Software Engineering: A Modern Approach](https://softengbook.org/chapter7), Ch. 7 — free open textbook (page blocks automated fetches; spot-check before relying on it)* |
+| 12 | [Architectural Patterns](part-3-12--architectural-patterns/README.md) | *[Software Engineering: A Modern Approach](https://softengbook.org/chapter7), Ch. 7 · Eric Evans, [DDD Reference](https://www.domainlanguage.com/ddd/reference/) — covers MVC, Microservices, Layered, and DDD; doesn't name-check Microkernel/Blackboard/SOA/CQRS directly* |
+| 13 | [Enterprise Application Patterns](part-3-13--enterprise-application-patterns/README.md) | Martin Fowler, [P of EAA Catalog](https://martinfowler.com/eaaCatalog/) |
+
+### Part 4 — System Design Fundamentals
+
+| # | Topic | Free companion / source |
+|---|---|---|
+| 14 | [Core System Design Concepts](part-4-14--core-system-design-concepts/README.md) | [system-design-primer](https://github.com/donnemartin/system-design-primer) |
+| 15 | [Consistency & Availability Patterns](part-4-15--consistency-availability-patterns/README.md) | [system-design-primer](https://github.com/donnemartin/system-design-primer) |
+| 16 | [DNS, CDNs & Load Balancers](part-4-16--dns-cdns-load-balancers/README.md) | [system-design-primer](https://github.com/donnemartin/system-design-primer) |
+| 17 | [Scaling Applications](part-4-17--scaling-applications/README.md) | [system-design-primer](https://github.com/donnemartin/system-design-primer) |
+
+### Part 5 — Data at Scale
+
+| # | Topic | Free companion / source |
+|---|---|---|
+| 18 | [Databases at Scale](part-5-18--databases-at-scale/README.md) | [system-design-primer](https://github.com/donnemartin/system-design-primer) |
+| 19 | [NoSQL Database Types](part-5-19--nosql-database-types/README.md) | [system-design-primer](https://github.com/donnemartin/system-design-primer) |
+| 20 | [Caching Strategies](part-5-20--caching-strategies/README.md) | [system-design-primer](https://github.com/donnemartin/system-design-primer) |
+
+### Part 6 — Asynchronous & Distributed Communication
+
+| # | Topic | Free companion / source |
+|---|---|---|
+| 21 | [Asynchronism](part-6-21--asynchronism/README.md) | [system-design-primer](https://github.com/donnemartin/system-design-primer) |
+| 22 | [Communication Protocols](part-6-22--communication-protocols/README.md) | [system-design-primer](https://github.com/donnemartin/system-design-primer) |
+| 23 | [Performance Antipatterns](part-6-23--performance-antipatterns/README.md) | Azure Architecture Center, [Antipatterns](https://learn.microsoft.com/en-us/azure/architecture/antipatterns/) |
+| 24 | [Monitoring & Observability](part-6-24--monitoring-observability/README.md) | Google, [SRE Book — Monitoring Distributed Systems](https://sre.google/sre-book/monitoring-distributed-systems/) |
+
+### Part 7 — Cloud Design Patterns
+
+| # | Topic | Free companion / source |
+|---|---|---|
+| 25 | [Cloud Messaging Patterns](part-7-25--cloud-messaging-patterns/README.md) | [Azure Architecture Center — Design Patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/) |
+| 26 | [Cloud Data Management Patterns](part-7-26--cloud-data-management-patterns/README.md) | [Azure Architecture Center — Design Patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/) |
+| 27 | [Reliability & Resiliency Patterns](part-7-27--reliability-resiliency-patterns/README.md) | Azure Architecture Center, [Reliability design patterns](https://learn.microsoft.com/en-us/azure/well-architected/reliability/design-patterns) |
+| 28 | [Cloud Security Patterns](part-7-28--cloud-security-patterns/README.md) | Azure Architecture Center, [Security design patterns](https://learn.microsoft.com/en-us/azure/well-architected/security/design-patterns) |
+
+### Part 8 — The Software Architect Role
+
+| # | Topic | Free companion / source |
+|---|---|---|
+| 29 | [Understanding Software Architecture](part-8-29--understanding-software-architecture/README.md) | MIT [ESD.34 System Architecture](https://ocw.mit.edu/courses/esd-34-system-architecture-january-iap-2007/) |
+| 30 | [Architect Responsibilities & Soft Skills](part-8-30--architect-responsibilities-soft-skills/README.md) | MIT [21W.780 Communicating in Technical Organizations](https://ocw.mit.edu/courses/21w-780-communicating-in-technical-organizations-fall-2001/) |
+| 31 | [Architecture Frameworks & Methodologies](part-8-31--architecture-frameworks-methodologies/README.md) | [Scrum Guide](https://scrumguides.org/) · OMG, [UML 2.5.1 Specification](https://www.omg.org/spec/UML/2.5.1/PDF) |
+| 32 | [Security for Architects](part-8-32--security-for-architects/README.md) | [OWASP Top 10](https://owasp.org/www-project-top-ten/) |
+| 33 | [Operations & DevOps Knowledge](part-8-33--operations-devops-knowledge/README.md) | freeCodeCamp, [DevOps articles & tutorials](https://www.freecodecamp.org/news/tag/devops/) |
 
 *No free, no-signup companion could be verified for two frameworks named in topic 31
 — TOGAF's official docs now sit behind a mandatory OAuth login, and BABOK requires
