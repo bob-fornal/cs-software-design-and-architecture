@@ -19,74 +19,74 @@ The 33 topics below are the index for the whole curriculum — the order they're
 
 | # | Topic | Free companion / source |
 |---|---|---|
-| 1 | [Clean Code Principles](part-1/part-1-1--clean-code-principles/README.md) | MIT [6.005 Software Construction](https://ocw.mit.edu/courses/6-005-software-construction-spring-2016/) · [blog.cleancoder.com](https://blog.cleancoder.com/) |
-| 2 | [Structured Programming](part-1/part-1-2--structured-programming/README.md) | Harvard [CS50x](https://cs50.harvard.edu/x/) |
-| 3 | [Functional Programming](part-1/part-1-3--functional-programming/README.md) | MIT, [Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/9780262510875/structure-and-interpretation-of-computer-programs/) (SICP, full free text) |
-| 4 | [Object-Oriented Programming](part-1/part-1-4--object-oriented-programming/README.md) | MIT [6.005 Software Construction](https://ocw.mit.edu/courses/6-005-software-construction-spring-2016/) · Martin Fowler, [Anemic Domain Model](https://martinfowler.com/bliki/AnemicDomainModel.html) |
-| 5 | [Programming Paradigms](part-1/part-1-5--programming-paradigms/README.md) | Stanford [CS107: Programming Paradigms](https://see.stanford.edu/Course/CS107) (Stanford Engineering Everywhere) |
+| 1 | [Clean Code Principles](curriculum/part-1/part-1-1--clean-code-principles/README.md) | MIT [6.005 Software Construction](https://ocw.mit.edu/courses/6-005-software-construction-spring-2016/) · [blog.cleancoder.com](https://blog.cleancoder.com/) |
+| 2 | [Structured Programming](curriculum/part-1/part-1-2--structured-programming/README.md) | Harvard [CS50x](https://cs50.harvard.edu/x/) |
+| 3 | [Functional Programming](curriculum/part-1/part-1-3--functional-programming/README.md) | MIT, [Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/9780262510875/structure-and-interpretation-of-computer-programs/) (SICP, full free text) |
+| 4 | [Object-Oriented Programming](curriculum/part-1/part-1-4--object-oriented-programming/README.md) | MIT [6.005 Software Construction](https://ocw.mit.edu/courses/6-005-software-construction-spring-2016/) · Martin Fowler, [Anemic Domain Model](https://martinfowler.com/bliki/AnemicDomainModel.html) |
+| 5 | [Programming Paradigms](curriculum/part-1/part-1-5--programming-paradigms/README.md) | Stanford [CS107: Programming Paradigms](https://see.stanford.edu/Course/CS107) (Stanford Engineering Everywhere) |
 
 ### Part 2 — Design Principles & Patterns
 
 | # | Topic | Free companion / source |
 |---|---|---|
-| 6 | [Core Design Principles](part-2/part-2-6--core-design-principles/README.md) | [DeviQ — Principles](https://deviq.com/principles/) |
-| 7 | [SOLID Principles](part-2/part-2-7--solid-principles/README.md) | [DeviQ — SOLID](https://deviq.com/principles/solid) · freeCodeCamp, [SOLID Principles Explained](https://www.freecodecamp.org/news/solid-principles-explained-in-plain-english/) |
-| 8 | [DRY & YAGNI](part-2/part-2-8--dry-yagni/README.md) | [DeviQ — DRY](https://deviq.com/principles/dont-repeat-yourself) / [YAGNI](https://deviq.com/principles/yagni/) · Martin Fowler, [Yagni](https://martinfowler.com/bliki/Yagni.html) |
-| 9 | [Design Patterns (GoF & PoSA)](part-2/part-2-9--design-patterns-gof-posa/README.md) | [refactoring.guru — Design Patterns Catalog](https://refactoring.guru/design-patterns/catalog) · Vanderbilt, [POSA2 companion materials](https://www.dre.vanderbilt.edu/~schmidt/POSA/POSA2/) |
+| 6 | [Core Design Principles](curriculum/part-2/part-2-6--core-design-principles/README.md) | [DeviQ — Principles](https://deviq.com/principles/) |
+| 7 | [SOLID Principles](curriculum/part-2/part-2-7--solid-principles/README.md) | [DeviQ — SOLID](https://deviq.com/principles/solid) · freeCodeCamp, [SOLID Principles Explained](https://www.freecodecamp.org/news/solid-principles-explained-in-plain-english/) |
+| 8 | [DRY & YAGNI](curriculum/part-2/part-2-8--dry-yagni/README.md) | [DeviQ — DRY](https://deviq.com/principles/dont-repeat-yourself) / [YAGNI](https://deviq.com/principles/yagni/) · Martin Fowler, [Yagni](https://martinfowler.com/bliki/Yagni.html) |
+| 9 | [Design Patterns (GoF & PoSA)](curriculum/part-2/part-2-9--design-patterns-gof-posa/README.md) | [refactoring.guru — Design Patterns Catalog](https://refactoring.guru/design-patterns/catalog) · Vanderbilt, [POSA2 companion materials](https://www.dre.vanderbilt.edu/~schmidt/POSA/POSA2/) |
 
 ### Part 3 — Architectural Foundations
 
 | # | Topic | Free companion / source |
 |---|---|---|
-| 10 | [Architectural Principles](part-3/part-3-10--architectural-principles/README.md) | Robert C. Martin, [The Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) |
-| 11 | [Architectural Styles](part-3/part-3-11--architectural-styles/README.md) | *[Software Engineering: A Modern Approach](https://softengbook.org/chapter7), Ch. 7 — free open textbook (page blocks automated fetches; spot-check before relying on it)* |
-| 12 | [Architectural Patterns](part-3/part-3-12--architectural-patterns/README.md) | *[Software Engineering: A Modern Approach](https://softengbook.org/chapter7), Ch. 7 · Eric Evans, [DDD Reference](https://www.domainlanguage.com/ddd/reference/) — covers MVC, Microservices, Layered, and DDD; doesn't name-check Microkernel/Blackboard/SOA/CQRS directly* |
-| 13 | [Enterprise Application Patterns](part-3/part-3-13--enterprise-application-patterns/README.md) | Martin Fowler, [P of EAA Catalog](https://martinfowler.com/eaaCatalog/) |
+| 10 | [Architectural Principles](curriculum/part-3/part-3-10--architectural-principles/README.md) | Robert C. Martin, [The Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) |
+| 11 | [Architectural Styles](curriculum/part-3/part-3-11--architectural-styles/README.md) | *[Software Engineering: A Modern Approach](https://softengbook.org/chapter7), Ch. 7 — free open textbook (page blocks automated fetches; spot-check before relying on it)* |
+| 12 | [Architectural Patterns](curriculum/part-3/part-3-12--architectural-patterns/README.md) | *[Software Engineering: A Modern Approach](https://softengbook.org/chapter7), Ch. 7 · Eric Evans, [DDD Reference](https://www.domainlanguage.com/ddd/reference/) — covers MVC, Microservices, Layered, and DDD; doesn't name-check Microkernel/Blackboard/SOA/CQRS directly* |
+| 13 | [Enterprise Application Patterns](curriculum/part-3/part-3-13--enterprise-application-patterns/README.md) | Martin Fowler, [P of EAA Catalog](https://martinfowler.com/eaaCatalog/) |
 
 ### Part 4 — System Design Fundamentals
 
 | # | Topic | Free companion / source |
 |---|---|---|
-| 14 | [Core System Design Concepts](part-4/part-4-14--core-system-design-concepts/README.md) | [system-design-primer](https://github.com/donnemartin/system-design-primer) |
-| 15 | [Consistency & Availability Patterns](part-4/part-4-15--consistency-availability-patterns/README.md) | [system-design-primer](https://github.com/donnemartin/system-design-primer) |
-| 16 | [DNS, CDNs & Load Balancers](part-4/part-4-16--dns-cdns-load-balancers/README.md) | [system-design-primer](https://github.com/donnemartin/system-design-primer) |
-| 17 | [Scaling Applications](part-4/part-4-17--scaling-applications/README.md) | [system-design-primer](https://github.com/donnemartin/system-design-primer) |
+| 14 | [Core System Design Concepts](curriculum/part-4/part-4-14--core-system-design-concepts/README.md) | [system-design-primer](https://github.com/donnemartin/system-design-primer) |
+| 15 | [Consistency & Availability Patterns](curriculum/part-4/part-4-15--consistency-availability-patterns/README.md) | [system-design-primer](https://github.com/donnemartin/system-design-primer) |
+| 16 | [DNS, CDNs & Load Balancers](curriculum/part-4/part-4-16--dns-cdns-load-balancers/README.md) | [system-design-primer](https://github.com/donnemartin/system-design-primer) |
+| 17 | [Scaling Applications](curriculum/part-4/part-4-17--scaling-applications/README.md) | [system-design-primer](https://github.com/donnemartin/system-design-primer) |
 
 ### Part 5 — Data at Scale
 
 | # | Topic | Free companion / source |
 |---|---|---|
-| 18 | [Databases at Scale](part-5/part-5-18--databases-at-scale/README.md) | [system-design-primer](https://github.com/donnemartin/system-design-primer) |
-| 19 | [NoSQL Database Types](part-5/part-5-19--nosql-database-types/README.md) | [system-design-primer](https://github.com/donnemartin/system-design-primer) |
-| 20 | [Caching Strategies](part-5/part-5-20--caching-strategies/README.md) | [system-design-primer](https://github.com/donnemartin/system-design-primer) |
+| 18 | [Databases at Scale](curriculum/part-5/part-5-18--databases-at-scale/README.md) | [system-design-primer](https://github.com/donnemartin/system-design-primer) |
+| 19 | [NoSQL Database Types](curriculum/part-5/part-5-19--nosql-database-types/README.md) | [system-design-primer](https://github.com/donnemartin/system-design-primer) |
+| 20 | [Caching Strategies](curriculum/part-5/part-5-20--caching-strategies/README.md) | [system-design-primer](https://github.com/donnemartin/system-design-primer) |
 
 ### Part 6 — Asynchronous & Distributed Communication
 
 | # | Topic | Free companion / source |
 |---|---|---|
-| 21 | [Asynchronism](part-6/part-6-21--asynchronism/README.md) | [system-design-primer](https://github.com/donnemartin/system-design-primer) |
-| 22 | [Communication Protocols](part-6/part-6-22--communication-protocols/README.md) | [system-design-primer](https://github.com/donnemartin/system-design-primer) |
-| 23 | [Performance Antipatterns](part-6/part-6-23--performance-antipatterns/README.md) | Azure Architecture Center, [Antipatterns](https://learn.microsoft.com/en-us/azure/architecture/antipatterns/) |
-| 24 | [Monitoring & Observability](part-6/part-6-24--monitoring-observability/README.md) | Google, [SRE Book — Monitoring Distributed Systems](https://sre.google/sre-book/monitoring-distributed-systems/) |
+| 21 | [Asynchronism](curriculum/part-6/part-6-21--asynchronism/README.md) | [system-design-primer](https://github.com/donnemartin/system-design-primer) |
+| 22 | [Communication Protocols](curriculum/part-6/part-6-22--communication-protocols/README.md) | [system-design-primer](https://github.com/donnemartin/system-design-primer) |
+| 23 | [Performance Antipatterns](curriculum/part-6/part-6-23--performance-antipatterns/README.md) | Azure Architecture Center, [Antipatterns](https://learn.microsoft.com/en-us/azure/architecture/antipatterns/) |
+| 24 | [Monitoring & Observability](curriculum/part-6/part-6-24--monitoring-observability/README.md) | Google, [SRE Book — Monitoring Distributed Systems](https://sre.google/sre-book/monitoring-distributed-systems/) |
 
 ### Part 7 — Cloud Design Patterns
 
 | # | Topic | Free companion / source |
 |---|---|---|
-| 25 | [Cloud Messaging Patterns](part-7/part-7-25--cloud-messaging-patterns/README.md) | [Azure Architecture Center — Design Patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/) |
-| 26 | [Cloud Data Management Patterns](part-7/part-7-26--cloud-data-management-patterns/README.md) | [Azure Architecture Center — Design Patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/) |
-| 27 | [Reliability & Resiliency Patterns](part-7/part-7-27--reliability-resiliency-patterns/README.md) | Azure Architecture Center, [Reliability design patterns](https://learn.microsoft.com/en-us/azure/well-architected/reliability/design-patterns) |
-| 28 | [Cloud Security Patterns](part-7/part-7-28--cloud-security-patterns/README.md) | Azure Architecture Center, [Security design patterns](https://learn.microsoft.com/en-us/azure/well-architected/security/design-patterns) |
+| 25 | [Cloud Messaging Patterns](curriculum/part-7/part-7-25--cloud-messaging-patterns/README.md) | [Azure Architecture Center — Design Patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/) |
+| 26 | [Cloud Data Management Patterns](curriculum/part-7/part-7-26--cloud-data-management-patterns/README.md) | [Azure Architecture Center — Design Patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/) |
+| 27 | [Reliability & Resiliency Patterns](curriculum/part-7/part-7-27--reliability-resiliency-patterns/README.md) | Azure Architecture Center, [Reliability design patterns](https://learn.microsoft.com/en-us/azure/well-architected/reliability/design-patterns) |
+| 28 | [Cloud Security Patterns](curriculum/part-7/part-7-28--cloud-security-patterns/README.md) | Azure Architecture Center, [Security design patterns](https://learn.microsoft.com/en-us/azure/well-architected/security/design-patterns) |
 
 ### Part 8 — The Software Architect Role
 
 | # | Topic | Free companion / source |
 |---|---|---|
-| 29 | [Understanding Software Architecture](part-8/part-8-29--understanding-software-architecture/README.md) | MIT [ESD.34 System Architecture](https://ocw.mit.edu/courses/esd-34-system-architecture-january-iap-2007/) |
-| 30 | [Architect Responsibilities & Soft Skills](part-8/part-8-30--architect-responsibilities-soft-skills/README.md) | MIT [21W.780 Communicating in Technical Organizations](https://ocw.mit.edu/courses/21w-780-communicating-in-technical-organizations-fall-2001/) |
-| 31 | [Architecture Frameworks & Methodologies](part-8/part-8-31--architecture-frameworks-methodologies/README.md) | [Scrum Guide](https://scrumguides.org/) · OMG, [UML 2.5.1 Specification](https://www.omg.org/spec/UML/2.5.1/PDF) |
-| 32 | [Security for Architects](part-8/part-8-32--security-for-architects/README.md) | [OWASP Top 10](https://owasp.org/www-project-top-ten/) |
-| 33 | [Operations & DevOps Knowledge](part-8/part-8-33--operations-devops-knowledge/README.md) | freeCodeCamp, [DevOps articles & tutorials](https://www.freecodecamp.org/news/tag/devops/) |
+| 29 | [Understanding Software Architecture](curriculum/part-8/part-8-29--understanding-software-architecture/README.md) | MIT [ESD.34 System Architecture](https://ocw.mit.edu/courses/esd-34-system-architecture-january-iap-2007/) |
+| 30 | [Architect Responsibilities & Soft Skills](curriculum/part-8/part-8-30--architect-responsibilities-soft-skills/README.md) | MIT [21W.780 Communicating in Technical Organizations](https://ocw.mit.edu/courses/21w-780-communicating-in-technical-organizations-fall-2001/) |
+| 31 | [Architecture Frameworks & Methodologies](curriculum/part-8/part-8-31--architecture-frameworks-methodologies/README.md) | [Scrum Guide](https://scrumguides.org/) · OMG, [UML 2.5.1 Specification](https://www.omg.org/spec/UML/2.5.1/PDF) |
+| 32 | [Security for Architects](curriculum/part-8/part-8-32--security-for-architects/README.md) | [OWASP Top 10](https://owasp.org/www-project-top-ten/) |
+| 33 | [Operations & DevOps Knowledge](curriculum/part-8/part-8-33--operations-devops-knowledge/README.md) | freeCodeCamp, [DevOps articles & tutorials](https://www.freecodecamp.org/news/tag/devops/) |
 
 *No free, no-signup companion could be verified for two frameworks named in topic 31
 — TOGAF's official docs now sit behind a mandatory OAuth login, and BABOK requires

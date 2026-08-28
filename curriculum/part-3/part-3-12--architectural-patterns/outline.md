@@ -1,0 +1,22 @@
+# 12. Architectural Patterns — Session Outline
+
+[Back to topic index](README.md) · [Back to curriculum index](../../../README.md)
+
+## Session outline (~55–60 min)
+
+| Segment | Time | Content |
+|---|---|---|
+| Hook: styles vs. patterns | 3 min | Recap topic 11 (styles are broad shapes: layered, event-driven, distributed). Patterns are named, reusable solutions *within* those shapes — MVC is a layered pattern, microservices is a distributed pattern. Today's goal: build a catalog. |
+| MVC | 6 min | Model (data + business rules), View (presentation), Controller (mediates input, updates model, selects view). Emphasize the *dependency direction*: View and Controller depend on Model, Model knows nothing about either. Show where MVC commonly rots: "fat controllers" that absorb business logic that belongs in the model. |
+| Domain-Driven Design | 8 min | Strategic DDD: bounded contexts, ubiquitous language. Tactical DDD: entities (identity persists over time), value objects (defined by their attributes, immutable), aggregates (a cluster of entities/value objects with one root enforcing invariants), repositories (illusion of an in-memory collection of aggregates). Use a small example — "Order" aggregate root containing "LineItem" value objects. |
+| Microservices | 6 min | Independently deployable services, each owning its own data, communicating over the network. Trade-offs: independent scaling/deployment vs. distributed-systems complexity (network calls, eventual consistency, operational overhead). Contrast with a modular monolith — you can get much of the *decomposition* benefit without the network cost. |
+| Microkernel (plug-in architecture) | 5 min | A minimal core system providing essential services, with extensions/plug-ins registered against it (e.g., IDEs like VS Code/Eclipse, browsers with extensions). Core doesn't know about specific plug-ins in advance — it depends on a plug-in interface. Good fit when you need a stable core with highly variable, independently-developed extensions. |
+| Blackboard pattern | 4 min | A shared data store (the "blackboard") that multiple independent, specialized components read from and write to, with a controller coordinating who acts next. Classic fit for problems with no deterministic solution path — speech recognition, some AI planning systems — where partial solutions accumulate opportunistically. |
+| Serverless architecture | 5 min | Functions as the unit of deployment; provider manages the runtime, scaling, and infrastructure. Trade-offs: no server management and pay-per-execution, but cold starts, execution time limits, and vendor-specific event models. Distinguish FaaS (functions) from BaaS (managed backend services like auth/storage) — "serverless" usually means both together. |
+| Event Sourcing | 6 min | Instead of storing current state, store the sequence of events that produced it; current state is derived by replaying events (or from a snapshot + replay of recent events). Benefits: full audit trail, ability to rebuild/rederive new projections later. Costs: replaying can get expensive without snapshots, and querying "current state" needs a projection step. |
+| SOA (Service-Oriented Architecture) | 4 min | Predecessor to microservices: coarse-grained services, often integrated through an Enterprise Service Bus (ESB) that handles routing, transformation, and orchestration. Contrast with microservices' preference for smart endpoints and dumb pipes — SOA tends to centralize integration logic in the bus, microservices tends to push it to the edges. |
+| CQRS | 6 min | Command Query Responsibility Segregation: separate models for writes (commands, enforce business rules) and reads (queries, optimized for display, sometimes a denormalized read model). Often paired with Event Sourcing (commands produce events; read models are projections of those events) but doesn't require it. Trade-off: more moving parts and eventual consistency between write and read sides, in exchange for each side being optimized independently. |
+| Synthesis & homework framing | 5 min | Put the catalog on one slide: which patterns compose with which styles from topic 11 (microservices + event-driven often travel together; MVC is typically layered client-server). Introduce the three homework assignments. |
+
+## Further resources
+- Free companion: *[Software Engineering: A Modern Approach](https://softengbook.org/chapter7), Ch. 7* · Eric Evans, [DDD Reference](https://www.domainlanguage.com/ddd/reference/)
